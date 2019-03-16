@@ -1,6 +1,6 @@
-exports.element = {
+module.exports = {
 
 
-    goButton: element(by.id('gobutton')),
+  
 
 }

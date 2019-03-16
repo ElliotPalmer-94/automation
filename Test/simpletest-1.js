@@ -1,21 +1,12 @@
 var pageElements = require('../Elements/page-elements');
+var helper = require('../Helpers/helpers');
 
-// spec.js
-describe('Protractor Demo App', function() {
-    it('should have a title', function(done) {
 
-      browser.get('http://juliemr.github.io/protractor-demo/');
-  
-      expect(browser.getTitle()).toEqual('Super Calculator');
+describe('Test Setup', function () {
+  it('Navigate to the testing site', function (done) {
 
-      done();
-    });
-
-    it('A GO button should be displayed', function(done) {
-      
-      expect(pageElements.element.goButton.isDisplayed()).toBe(true);
-
+      helper.navtosite();
       done();
 
-    });
   });
+});
