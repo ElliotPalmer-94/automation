@@ -14,7 +14,7 @@ exports.config = {
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000
   },
-  
+
   seleniumAddress: 'http://localhost:4444/wd/hub',
   maxInstances: 1,
 
@@ -26,7 +26,7 @@ exports.config = {
     {
       browserName: 'chrome',
       'chromeOptions': {
-        'args': ['--start-maximized', '--incognito','disable-infobars']
+        'args': ['--start-maximized', '--incognito', 'disable-infobars']
       }
     },
     // //Firefox
@@ -39,10 +39,10 @@ exports.config = {
     // //Edge
     {
       browserName: 'MicrosoftEdge',
-      seleniumAddress: 'http://localhost:17556',
+      seleniumAddress: 'http://localhost:17556/',
       maxInstances: 1,
-     },
-     //Internet Explorer
+    },
+    //Internet Explorer
     // {
     //   browserName: 'internet explorer',
     //   ignoreProtectedModeSettings: true,
@@ -56,6 +56,7 @@ exports.config = {
   //On start up do something
   onPrepare: function () {
 
+    //Ignore angular = TRUE
     browser.ignoreSynchronization = true;
 
     console.log(cowsay.say({
@@ -71,6 +72,6 @@ exports.config = {
 
   //When complete do something
   onComplete: function () {
- 
-    }
+    browser.quit();
+  }
 }
