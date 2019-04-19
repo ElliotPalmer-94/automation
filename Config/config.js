@@ -37,11 +37,11 @@ exports.config = {
       }
     },
     // //Edge
-    {
-      browserName: 'MicrosoftEdge',
-      seleniumAddress: 'http://localhost:17556/',
-      maxInstances: 1,
-    },
+    // {
+    //   browserName: 'MicrosoftEdge',
+    //   seleniumAddress: 'http://localhost:17556/',
+    //   maxInstances: 1,
+    // },
     //Internet Explorer
     // {
     //   browserName: 'internet explorer',
@@ -50,7 +50,7 @@ exports.config = {
   ],
 
   // ================= SPECS =================
-  specs: '../Test/simpletest-1.js',
+  specs: '../specs/e2e/*.js',
 
 
   //On start up do something
