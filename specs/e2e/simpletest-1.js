@@ -15,25 +15,13 @@ describe('Test Setup', function () {
 
 describe('AB Testing', function () {
   it('Navigate to page - correct URL', function (done) {
-
-    //Select the A/B Testing link
-    pageElements.abTesting.click();
-
-    //Get current URL and check this is the correct page
-    browser.getCurrentUrl().then(function (url) {
-      browser.wait(protractor.ExpectedConditions.urlContains(url), 5000, 'Did not navigate to URL').then(function (result) {
-        expect(result).toEqual(true);
-
-      });
-    });
+    navigation.navtopage(pageElements.abTesting)
 
     done();
 
   });
 
   it('Check text on page', function (done) {
-
-    browser.sleep(5000); ///// <-- Need to remove added for edge
 
     var heading1 = abTestingElements.heading_variation1;
     var heading2 = abTestingElements.heading_variation2;

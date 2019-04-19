@@ -15,17 +15,7 @@ describe('Test Setup', function () {
 
 describe('Add/Remove Elements', function () {
   it('Navigate to page - correct URL', function (done) {
-
-    //Select the Add/Remove Elements
-    pageElements.addRemoveElements.click();
-
-    //Get current URL and check this is the correct page
-    browser.getCurrentUrl().then(function (url) {
-      browser.wait(protractor.ExpectedConditions.urlContains(url), 5000, 'Did not navigate to URL').then(function (result) {
-        expect(result).toEqual(true);
-
-      });
-    });
+    navigation.navtopage(pageElements.addRemoveElements)
 
     done();
 
