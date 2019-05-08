@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="BackstopJS" tests="40" failures="5" errors="5" skipped="0">
+    <testcase classname="document" name=" ›› Welcome to the-internet main"/>
+    <testcase classname="document" name=" ›› A/B Testing"/>
+    <testcase classname="document" name=" ›› Add/Remove Elements"/>
+    <testcase classname="document" name=" ›› Broken Images"/>
+    <testcase classname="document" name=" ›› Challenging DOM">
+      <failure message="Design deviation ›› Challenging DOM (document) component"/>
+      <error message="Design deviation ›› Challenging DOM (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Checkboxes"/>
+    <testcase classname="document" name=" ›› Context Menu"/>
+    <testcase classname="document" name=" ›› Disappearing Elements"/>
+    <testcase classname="document" name=" ›› Drag and Drop"/>
+    <testcase classname="document" name=" ›› Dropdown"/>
+    <testcase classname="document" name=" ›› Dynamic Content">
+      <failure message="Design deviation ›› Dynamic Content (document) component"/>
+      <error message="Design deviation ›› Dynamic Content (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Dynamic Controls"/>
+    <testcase classname="document" name=" ›› Dynamic Loading"/>
+    <testcase classname="document" name=" ›› Entry Ad"/>
+    <testcase classname="document" name=" ›› Exit Intent"/>
+    <testcase classname="document" name=" ›› File Download"/>
+    <testcase classname="document" name=" ›› File Upload"/>
+    <testcase classname="document" name=" ›› Floating Menu">
+      <failure message="Design deviation ›› Floating Menu (document) component"/>
+      <error message="Design deviation ›› Floating Menu (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› Forgot Password"/>
+    <testcase classname="document" name=" ›› Form Authentication"/>
+    <testcase classname="document" name=" ›› Frames"/>
+    <testcase classname="document" name=" ›› Geolocation"/>
+    <testcase classname="document" name=" ›› Horizontal Slider"/>
+    <testcase classname="document" name=" ›› Hovers"/>
+    <testcase classname="document" name=" ›› Infinite Scroll">
+      <failure message="Design deviation ›› Infinite Scroll (document) component"/>
+      <error message="Design deviation ›› Infinite Scroll (document) component"/>
+    </testcase>
+    <testcase classname="document" name=" ›› JQuery UI Menus"/>
+    <testcase classname="document" name=" ›› JavaScript Alerts"/>
+    <testcase classname="document" name=" ›› JavaScript Error"/>
+    <testcase classname="document" name=" ›› Key Presses"/>
+    <testcase classname="document" name=" ›› Large &amp; Deep DOM"/>
+    <testcase classname="document" name=" ›› Multiple Windows"/>
+    <testcase classname="document" name=" ›› Nested Frames"/>
+    <testcase classname="document" name=" ›› Notification Messages"/>
+    <testcase classname="document" name=" ›› Redirect Link"/>
+    <testcase classname="document" name=" ›› Shifting Content"/>
+    <testcase classname="document" name=" ›› Slow Resources"/>
+    <testcase classname="document" name=" ›› Sortable Data Tables"/>
+    <testcase classname="document" name=" ›› Status Codes"/>
+    <testcase classname="document" name=" ›› Status Codes"/>
+    <testcase classname="document" name=" ›› Editor">
+      <failure message="Design deviation ›› Editor (document) component"/>
+      <error message="Design deviation ›› Editor (document) component"/>
+    </testcase>
+  </testsuite>
+</testsuites>
