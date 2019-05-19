@@ -4,30 +4,26 @@ var abTestingElements = require('../../elements/web/ab-testing-elements');
 var navigation = require('../../helpers/navigation-helpers');
 
 // ================= TEST =================
-describe('Test Setup', function () {
-  it('Navigate to the testing site', function (done) {
+describe('Test Setup', () => {
+  it('Navigate to the testing site', async () => {
     navigation.navtosite();
-
-    done();
 
   });
 });
 
-describe('AB Testing', function () {
-  it('Navigate to page - correct URL', function (done) {
+describe('AB Testing', () => {
+  it('Navigate to page - correct URL', async () => {
     navigation.navtopage(pageElements.abTesting)
-
-    done();
 
   });
 
-  it('Check text on page', function (done) {
+  it('Check text on page', async () => {
 
     var heading1 = abTestingElements.heading_variation1;
     var heading2 = abTestingElements.heading_variation2;
     var parargraph = abTestingElements.parargraph;
 
-    abTestingElements.contents.getText().then(function (text) {
+    abTestingElements.contents.getText().then((text) => {
 
       if (text.includes('A/B Test Control')) {
 
@@ -37,13 +33,11 @@ describe('AB Testing', function () {
       } else {
 
         expect(text).toContain(heading2);
+        expect(text).toContain(parargraph);
 
       }
 
     });
-
-    done();
   });
-
 
 });
