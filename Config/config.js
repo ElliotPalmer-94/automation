@@ -29,19 +29,23 @@ exports.config = {
         'args': ['--start-maximized', '--incognito', 'disable-infobars']
       }
     },
-    // //Firefox
+    //Firefox
     {
       browserName: 'firefox',
       'moz:firefoxOptions': {
         'args': ['--safe-mode']
       }
     },
+
+    //To Enable the Edge driver manually open the Edge driver 
     // //Edge
     // {
     //   browserName: 'MicrosoftEdge',
     //   seleniumAddress: 'http://localhost:17556/',
     //   maxInstances: 1,
     // },
+
+    //Leaving this off as the IE driver and IE are so broken
     //Internet Explorer
     // {
     //   browserName: 'internet explorer',
@@ -72,6 +76,9 @@ exports.config = {
 
   //When complete do something
   onComplete: function () {
+    browser.executeScript('window.localStorage.clear();');
+    browser.executeScript('window.sessionStorage.clear();');
+    browser.driver.manage().deleteAllCookies(); 
     browser.quit();
   }
 }
