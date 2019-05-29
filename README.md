@@ -16,7 +16,7 @@ After installing protractor update the webdriver-manager to the lastest version.
 webdriver-manager update
 ```
 *(Optional) if you want to also install Internet explorer or Edge*.
-In order to run Edge the driver must be called manually unlike chrome, firefix and ie.
+In order to run Edge the driver must be called manually unlike chrome, firefox and ie.
 
 ```
 webdriver-manager update --ie
