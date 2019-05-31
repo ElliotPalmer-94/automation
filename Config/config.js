@@ -1,6 +1,6 @@
 // ================= DECLARE =================
-var cowsay = require('cowsay');
-
+const cowsay = require('cowsay');
+const SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 
 // ================= WEBDRIVER SETTINGS =================
 exports.config = {
@@ -9,6 +9,7 @@ exports.config = {
   // Options to be passed to Jasmine-node.
   jasmineNodeOpts: {
     showColors: true, // Use colors in the command line report.
+    print: function () {}
   },
 
   jasmineNodeOpts: {
@@ -61,9 +62,9 @@ exports.config = {
     simpletest1: '../specs/e2e/simpletest-1*',
     simpletest2: '../specs/e2e/simpletest-2*',
     simpletest3: '../specs/e2e/simpletest-3*',
+    simpletest4: '../specs/e2e/simpletest-4*',
 
   },
-
 
   //On start up do something
   onPrepare: function () {
@@ -80,6 +81,12 @@ exports.config = {
     // Maximize window for Firefox 
     browser.manage().window().maximize();
 
+    //Jasmine spec report for clean reporting of test
+    jasmine.getEnv().addReporter(new SpecReporter({
+      spec: {
+              displayStacktrace: true
+          }
+    }));
   },
 
   //When complete do something
