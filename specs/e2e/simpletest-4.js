@@ -21,55 +21,64 @@ describe('Checkboxes', () => {
 
         var checkbox = checkboxElements.checkbox.get(0);
 
-        //Selecting the first checkbox and checking this checkbox is selected
-        if (checkbox.isSelected(false)) {
+        //Checking if the checkbox is selected
+        //if true do noting
+        //if false click
+        checkbox.isSelected().then((result) => {
+            if (result == false) {
+                checkbox.click();
+            }
 
-            checkbox.click();
-
-        }
-        expect(checkbox.isSelected()).toBe(true)
-
+            expect(checkbox.isSelected()).toBe(true);
+        });
     });
 
     it('Checkboxs - Select checkbox 1, check if the checkbox is NOT selected', async () => {
 
         var checkbox = checkboxElements.checkbox.get(0);
 
-        //Selecting the first checkbox and checking this checkbox is NOT selected
-        if (checkbox.isSelected(true)) {
+        //Checking if the checkbox is selected
+        //if true click
+        //if false do nothing
+        checkbox.isSelected().then((result) => {
+            if (result == true) {
+                checkbox.click();
+            }
 
-            checkbox.click();
-
-        }
-        expect(checkbox.isSelected()).toBe(false)
-
+            expect(checkbox.isSelected()).toBe(false);
+        });
     });
 
     it('Checkboxs - Select checkbox 2, check if the checkbox is selected', async () => {
 
-        var checkbox = checkboxElements.checkbox.get(0);
+        var checkbox = checkboxElements.checkbox.get(1);
 
-        //Selecting the second checkbox and checking this checkbox is selected
-        if (checkbox.isSelected(false)) {
+        //Checking if the checkbox is selected
+        //if true do noting
+        //if false click
+        checkbox.isSelected().then((result) => {
+            if (result == false) {
+                checkbox.click();
+            }
 
-            checkbox.click();
-
-        }
-        expect(checkbox.isSelected()).toBe(true)
-
+            expect(checkbox.isSelected()).toBe(true);
+        });
     });
 
     it('Checkboxs - Select checkbox 2, check if the checkbox is NOT selected', async () => {
 
-        var checkbox = checkboxElements.checkbox.get(0);
+        var checkbox = checkboxElements.checkbox.get(1);
 
-        //Selecting the second checkbox and checking this checkbox is NOT selected
-        if (checkbox.isSelected(true)) {
+        //Checking if the checkbox is selected
+        //if true click
+        //if false do nothing
+        checkbox.isSelected().then((result) => {
+            if (result == true) {
+                checkbox.click();
+            }
 
-            checkbox.click();
-
-        }
-        expect(checkbox.isSelected()).toBe(false)
-
+            expect(checkbox.isSelected()).toBe(false);
+        });
     });
+
 });
