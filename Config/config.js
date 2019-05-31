@@ -56,6 +56,14 @@ exports.config = {
   // ================= SPECS =================
   specs: '../specs/e2e/*.js',
 
+  suites: {
+
+    simpletest1: '../specs/e2e/simpletest-1*',
+    simpletest2: '../specs/e2e/simpletest-2*',
+    simpletest3: '../specs/e2e/simpletest-3*',
+
+  },
+
 
   //On start up do something
   onPrepare: function () {
