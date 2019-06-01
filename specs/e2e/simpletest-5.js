@@ -13,7 +13,7 @@ describe('Test Setup', () => {
     });
 });
 
-describe('Checkboxes', () => {
+describe('Uploading Files', () => {
     it('Navigate to page - correct URL', async () => {
         navigation.navtopage(pageElements.fileUpload)
 
