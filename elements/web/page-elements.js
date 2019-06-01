@@ -6,6 +6,6 @@ basicAuth: element(by.css('[href="/basic_auth"]')),
 brokenImages: element(by.css('[href="/broken_images"]')),
 checkboxes: element(by.css('[href="/checkboxes"]')),
 fileUpload: element(by.css('[href="/upload"]')),
-
+formAuthentication: element(by.css('[href="/login"]')),
 
 }
