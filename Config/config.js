@@ -65,6 +65,7 @@ exports.config = {
     simpletest4: '../specs/e2e/simpletest-4*',
     simpletest5: '../specs/e2e/simpletest-5*',
     simpletest6: '../specs/e2e/simpletest-6*',
+    simpletest7: '../specs/e2e/simpletest-7*',
 
   },
 
