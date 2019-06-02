@@ -43,7 +43,7 @@ describe('Drag and Drop Page', () => {
             console.log('BEFORE MOVE: ' + text); //Should return B,A
         });
 
-        //Run drag and drop function: move element1 onto element2
+        //Run drag and drop function: move element2 onto element1
         browser.executeScript(dragAndDropFn, dragAndDropElements.box_b, dragAndDropElements.box_a);
 
         //Checking the headers change from there defaults after being dragged
