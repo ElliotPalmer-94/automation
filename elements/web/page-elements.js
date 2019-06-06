@@ -8,6 +8,6 @@ checkboxes: element(by.css('[href="/checkboxes"]')),
 fileUpload: element(by.css('[href="/upload"]')),
 formAuthentication: element(by.css('[href="/login"]')),
 dragAndDrop: element(by.css('[href="/drag_and_drop"]')),
-
+download: element(by.css('[href="/download"]')),
 
 }

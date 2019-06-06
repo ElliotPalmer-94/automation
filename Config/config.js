@@ -9,7 +9,7 @@ exports.config = {
   // Options to be passed to Jasmine-node.
   jasmineNodeOpts: {
     showColors: true, // Use colors in the command line report.
-    print: function () {}
+    print: function () { }
   },
 
   jasmineNodeOpts: {
@@ -33,8 +33,25 @@ exports.config = {
     //Firefox
     {
       browserName: 'firefox',
+      
+      //Excluding this test as both browsers download and remove the file which causes the browsers to fall other each other
+      //Need to find a solution to this.....
+      exclude: ['../specs/e2e/simpletest-8*'],
       'moz:firefoxOptions': {
-        'args': ['--safe-mode']
+
+        'args': ['--safe-mode'],
+        "prefs": {
+
+          //Disable the download prompt
+          'browser.download.manager.alertOnEXEOpen': false,
+          'browser.download.manager.closeWhenDone': true,
+          'browser.download.manager.focusWhenStarting': false,
+          'browser.download.manager.showWhenStarting': false,
+          'browser.helperApps.alwaysAsk.force': false,
+          'browser.download.manager.showAlertOnComplete': false,
+          'browser.download.manager.useWindow': false,
+          "browser.helperApps.neverAsk.saveToDisk": 'text/plain,text/csv,application/csv;text/comma-separat‌​ed-values;application/excel;application/octet-stream;application/xlsx;application/xls;application/vnd.ms-excel;application/vnd.ms-excel.addin.macroenabled.12;application/vnd.ms-excel.sheet.binary.macroenabled.12;application/vnd.ms-excel.template.macroenabled.12;application/vnd.ms-excel.sheet.macroenabled.12;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+        }
       }
     },
 
@@ -66,6 +83,7 @@ exports.config = {
     simpletest5: '../specs/e2e/simpletest-5*',
     simpletest6: '../specs/e2e/simpletest-6*',
     simpletest7: '../specs/e2e/simpletest-7*',
+    simpletest8: '../specs/e2e/simpletest-8*',
 
   },
 
@@ -87,8 +105,8 @@ exports.config = {
     //Jasmine spec report for clean reporting of test
     jasmine.getEnv().addReporter(new SpecReporter({
       spec: {
-              displayStacktrace: true
-          }
+        displayStacktrace: true
+      }
     }));
   },
 
@@ -96,7 +114,7 @@ exports.config = {
   onComplete: function () {
     browser.executeScript('window.localStorage.clear();');
     browser.executeScript('window.sessionStorage.clear();');
-    browser.driver.manage().deleteAllCookies(); 
+    browser.driver.manage().deleteAllCookies();
     browser.quit();
   }
 }
