@@ -1,29 +1,29 @@
 // ================= REQUIRE =================
-var pageElements = require('../../elements/web/page-elements');
-var abTestingElements = require('../../elements/web/ab-testing-elements');
-var navigation = require('../../helpers/navigation-helpers');
+const page_elements = require('../../elements/web/page-elements');
+const ab_testing_elements = require('../../elements/web/ab-testing-elements');
+const navigation_helper = require('../../helpers/navigation-helpers');
 
 // ================= TEST =================
 describe('Test Setup', () => {
   it('Navigate to the testing site', async () => {
-    navigation.navtosite();
+    navigation_helper.navtosite();
 
   });
 });
 
 describe('AB Testing', () => {
   it('Navigate to page - correct URL', async () => {
-    navigation.navtopage(pageElements.abTesting)
+    navigation_helper.navtopage(page_elements.abTesting)
 
   });
 
   it('Check text on page', async () => {
 
-    var heading1 = abTestingElements.heading_variation1;
-    var heading2 = abTestingElements.heading_variation2;
-    var parargraph = abTestingElements.parargraph;
+    var heading1 = ab_testing_elements.heading_variation1;
+    var heading2 = ab_testing_elements.heading_variation2;
+    var parargraph = ab_testing_elements.parargraph;
 
-    abTestingElements.contents.getText().then((text) => {
+    ab_testing_elements.contents.getText().then((text) => {
 
       if (text.includes('A/B Test Control')) {
 

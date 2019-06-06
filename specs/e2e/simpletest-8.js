@@ -1,13 +1,13 @@
 
 // ================= REQUIRE =================
-var pageElements = require('../../elements/web/page-elements');
-var downloadElements = require('../../elements/web/download-elements');
-var navigation = require('../../helpers/navigation-helpers');
-var files = require('../../helpers/file-helpers');
-var downloadsFolder = require('downloads-folder');
-var fs = require('fs');
+const page_elements = require('../../elements/web/page-elements');
+const download_elements = require('../../elements/web/download-elements');
+const navigation_helper = require('../../helpers/navigation-helpers');
+const files_helpers = require('../../helpers/file-helpers');
+const downloads_folder = require('downloads-folder');
+const fs = require('fs');
 
-const path = downloadsFolder();
+const path = downloads_folder();
 console.log('PATH: ' + path)
 
 const file = '\\simple.txt';
@@ -20,20 +20,20 @@ console.log('DOWNLOADED FILE: ' + downloaded_file)
 // ================= TEST =================
 describe('Test Setup', () => {
     it('Navigate to the testing site', async () => {
-        navigation.navtosite();
+        navigation_helper.navtosite();
 
     });
 });
 
 describe('Download Page', () => {
     it('Navigate to page - correct URL', async () => {
-        navigation.navtopage(pageElements.download)
+        navigation_helper.navtopage(page_elements.download)
 
     });
 
     it('Download - Download txt file', async () => {
 
-        downloadElements.download_item_1.click();
+        download_elements.download_item_1.click();
 
         //Wait for download to finish otherwise file will become tmp file...
         browser.sleep(5000);
@@ -42,7 +42,7 @@ describe('Download Page', () => {
 
     it('Download - Check file is downloaded', async () => {
 
-        files.checkFilesExist(path, downloaded_file);
+        files_helpers.checkFilesExist(path, downloaded_file);
 
     });
 
@@ -56,7 +56,7 @@ describe('Download Page', () => {
 
     it('Download - Remove file', async () => {
 
-        files.removeFiles(path, downloaded_file);
+        files_helpers.removeFiles(path, downloaded_file);
 
     });
 });
