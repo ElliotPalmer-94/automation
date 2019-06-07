@@ -18,6 +18,7 @@ exports.config = {
 
   seleniumAddress: 'http://localhost:4444/wd/hub',
   maxInstances: 1,
+  maxSessions: 1, // Number of browsers which can run at any one time.
 
   // Browser Captabilities 
   // Capabilities to be passed to the webdriver instance.
@@ -33,10 +34,6 @@ exports.config = {
     //Firefox
     {
       browserName: 'firefox',
-      
-      //Excluding this test as both browsers download and remove the file which causes the browsers to fall other each other
-      //Need to find a solution to this.....
-      exclude: ['../specs/e2e/simpletest-8*'],
       'moz:firefoxOptions': {
 
         'args': ['--safe-mode'],
