@@ -2,6 +2,8 @@
 
 A repo focused on expadning my skills, trying out new tools.
 
+<img src="https://media.giphy.com/media/UtsfKvIicVzDZ47KPy/giphy.gif">
+
 # Installation
 # ----------Protractor----------
 Install protractor: https://www.npmjs.com/package/protractor
