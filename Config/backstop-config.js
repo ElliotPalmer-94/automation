@@ -21,6 +21,26 @@ module.exports =
         "label": "Desktop",
         "width": 1920,
         "height": 1080
+      },
+      {
+        "label": "Galaxy S5",
+        "width": 360,
+        "height": 640
+      },
+      {
+        "label": "Pixel 2",
+        "width": 411,
+        "height": 731
+      },
+      {
+        "label": "iPhone X",
+        "width": 375,
+        "height": 812
+      },
+      {
+        "label": "iPad Pro",
+        "width": 1024,
+        "height": 1366
       }
     ],
 
