@@ -53,6 +53,12 @@ To run the E2E test while in the following directory `automation` run the follow
 protractor config/config.js
 ```
 
+To run a particular E2E test while in the following directory `automation` for example running `simpletest1` run the following:
+
+```
+protractor config/config.js --suite simpletest1
+```
+
 # ----------Run UI Test----------
 To run the UI test while in the following directory `automation` run the following:
 
