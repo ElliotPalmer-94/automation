@@ -17,27 +17,31 @@ describe('AB Testing', () => {
 
   });
 
-  it('Check text on page', async () => {
-
-    var heading1 = ab_testing_elements.heading_variation1;
-    var heading2 = ab_testing_elements.heading_variation2;
-    var parargraph = ab_testing_elements.parargraph;
+  it('Check headings on page', async () => {
 
     ab_testing_elements.contents.getText().then((text) => {
 
       if (text.includes('A/B Test Control')) {
 
-        expect(text).toContain(heading1);
-        expect(text).toContain(parargraph);
+        expect(text).toContain(ab_testing_elements.heading_variation1);
 
       } else {
 
-        expect(text).toContain(heading2);
-        expect(text).toContain(parargraph);
+        expect(text).toContain(ab_testing_elements.heading_variation2);
 
       }
 
     });
+  });
+
+  it('Check paragraph on page', async () => {
+
+    ab_testing_elements.contents.getText().then((text) => {
+
+      expect(text).toContain(ab_testing_elements.paragraph)
+
+    });
+
   });
 
 });
