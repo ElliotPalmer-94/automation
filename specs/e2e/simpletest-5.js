@@ -19,7 +19,7 @@ describe('Uploading Files', () => {
 
     });
 
-    it('Upload file - Able to upload file', async () => {
+    it('Upload file - Able to upload image file', async () => {
 
         var fileToUpload = '../../resources/images/car.jpg'
 
@@ -33,6 +33,26 @@ describe('Uploading Files', () => {
         //No image appears here so just check the file name returned on the file upload screen
         file_upload_elements.uploaded_file.getText().then((text) => {
             expect(text).toEqual('car.jpg');
+        });
+
+    });
+
+    it('Upload file - Able to upload txt file', async () => {
+
+        var fileToUpload = '../../resources/files/simple.txt'
+
+        browser.get(screen_urls.file_upload_url);
+
+        //Send path of file into choose file 
+        //Click upload button
+        //Once the upload has finished check the file is uploaded
+        absolutePath = path.resolve(__dirname, fileToUpload);
+        file_upload_elements.btn_choose_file.sendKeys(absolutePath);    
+        file_upload_elements.btn_upload.click();
+
+        //No image appears here so just check the file name returned on the file upload screen
+        file_upload_elements.uploaded_file.getText().then((text) => {
+            expect(text).toEqual('simple.txt');
         });
 
     });
