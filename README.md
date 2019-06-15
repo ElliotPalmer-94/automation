@@ -46,6 +46,13 @@ Install BackstopJS: https://github.com/garris/BackstopJS
 npm i -g backstopjs
 ```
 
+# ----------Appium----------
+Install Appium: https://github.com/appium/appium/blob/master/docs/en/about-appium/getting-started.md
+
+```
+npm install -g appium
+```
+
 # Running Test
 # ----------Run E2E Test----------
 To run the E2E test while in the following directory `automation` run the following:
