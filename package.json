@@ -1,0 +1,25 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "A repo focused on expadning my skills, trying out new tools.",
+  "main": "index.js",
+  "dependencies": {
+    "cowsay": "^1.4.0",
+    "downloads-folder": "^1.0.1",
+    "jasmine-spec-reporter": "^4.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElliotPalmer-94/automation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElliotPalmer-94/automation/issues"
+  },
+  "homepage": "https://github.com/ElliotPalmer-94/automation#readme"
+}
