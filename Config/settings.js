@@ -4,11 +4,12 @@
 const username = 'admin' || process.env.username
 const password = 'admin' || process.env.password
 
-
+//SQL
+const sql_connection_details = 'mssql://testaccount:password12345@localhost/mydatabase'
 
 module.exports = {
 
     username,
     password,
-
+    sql_connection_details,
 }

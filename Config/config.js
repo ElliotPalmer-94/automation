@@ -71,6 +71,9 @@ exports.config = {
   // ================= SPECS =================
   specs: '../specs/e2e/*.js',
 
+  exclude: ['../specs/e2e/simpletest-9*'], //exclude this test as this is running SQL commands locally
+
+
   suites: {
 
     simpletest1: '../specs/e2e/simpletest-1*',
@@ -81,6 +84,7 @@ exports.config = {
     simpletest6: '../specs/e2e/simpletest-6*',
     simpletest7: '../specs/e2e/simpletest-7*',
     simpletest8: '../specs/e2e/simpletest-8*',
+    simpletest9: '../specs/e2e/simpletest-9*',
 
   },
 

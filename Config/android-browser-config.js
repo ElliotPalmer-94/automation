@@ -37,7 +37,8 @@ exports.config = {
 
     // ================= SPECS =================
     specs: '../specs/e2e/*.js',
-    exclude: ['../specs/e2e/simpletest-5*','../specs/e2e/simpletest-8*'], //exclude these 2 test as these deal with uploading/removing media
+
+    exclude: ['../specs/e2e/simpletest-5*','../specs/e2e/simpletest-8*','../specs/e2e/simpletest-9*'], //exclude these 2 test as these deal with uploading/removing media and SQL locally
 
     suites: {
 
@@ -49,7 +50,7 @@ exports.config = {
         simpletest6: '../specs/e2e/simpletest-6*',
         simpletest7: '../specs/e2e/simpletest-7*',
         simpletest8: '../specs/e2e/simpletest-8*',
-
+        simpletest9: '../specs/e2e/simpletest-9*',
     },
 
     //On start up do something
