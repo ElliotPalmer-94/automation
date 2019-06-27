@@ -73,6 +73,12 @@ To run a particular E2E test while in the following directory `automation` for e
 protractor config/config.js --suite simpletest1
 ```
 
+To run a android web E2E test while in the following directory `automation` run the following:
+
+```
+protractor config/android-browser-config.js
+```
+
 # ----------Run UI Test----------
 To run the UI test while in the following directory `automation` run the following:
 
