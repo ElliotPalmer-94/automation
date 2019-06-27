@@ -6,7 +6,8 @@
   "dependencies": {
     "cowsay": "^1.4.0",
     "downloads-folder": "^1.0.1",
-    "jasmine-spec-reporter": "^4.2.1"
+    "jasmine-spec-reporter": "^4.2.1",
+    "mssql": "^5.1.0"
   },
   "devDependencies": {},
   "scripts": {
