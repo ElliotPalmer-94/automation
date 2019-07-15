@@ -86,6 +86,12 @@ To run a android web E2E test while in the following directory `automation` run 
 protractor config/android-browser-config.js
 ```
 
+To run a android native app E2E test while in the following directory `automation` run the following:
+
+```
+./node_modules/.bin/wdio Config/android-app-config.js
+```
+
 # ----------Run UI Test----------
 To run the UI test while in the following directory `automation` run the following:
 
