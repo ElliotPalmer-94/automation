@@ -1,15 +1,16 @@
-// ================= LOGIN DETAILS =================
-//Leaving the username and password in the settings as its just easier to run the test without having to setup a system
-//variable. In a *real* case scenario its best to use system variables here. 
-const username = 'admin' || process.env.username
-const password = 'admin' || process.env.password
-
-//SQL
-const sql_connection_details = 'mssql://testaccount:password12345@localhost/mydatabase'
-
 module.exports = {
+    // ================= LOGIN DETAILS =================
 
-    username,
-    password,
-    sql_connection_details,
+    //Timeouts
+    short_wait: 3000,
+    long_wait: 6000,
+
+    //Leaving the username and password in the settings as its just easier to run the test without having to setup a system
+    //variable. In a *real* case scenario its best to use system variables here. 
+    username: 'admin' || process.env.username,
+    password: 'admin' || process.env.password,
+
+    //SQL
+    sql_connection_details: 'mssql://testaccount:password12345@localhost/mydatabase'
+
 }
