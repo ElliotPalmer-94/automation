@@ -7,6 +7,9 @@ A repo focused on expadning my skills, trying out new tools.
 </p>
 
 <p align="center">
+  Mobile web/Mobile native app/Desktop testing
+  </p>
+<p align="center">
   <img src="https://media.giphy.com/media/IbOOE3MK6IZu3pqcUD/giphy.gif"></img>
     <img src="https://media.giphy.com/media/Yl51C5o6G4PavkkEtU/giphy.gif"></img>
 </p>
