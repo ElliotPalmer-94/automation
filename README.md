@@ -2,8 +2,15 @@
 
 A repo focused on expadning my skills, trying out new tools.
 
-<img src="https://media.giphy.com/media/UtsfKvIicVzDZ47KPy/giphy.gif">
-<img src="https://media.giphy.com/media/dt6GjMAvqHy5xZKmJq/giphy.gif">
+<p align="center">
+  <img src="https://media.giphy.com/media/UtsfKvIicVzDZ47KPy/giphy.gif"></img>
+</p>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/IbOOE3MK6IZu3pqcUD/giphy.gif"></img>
+    <img src="https://media.giphy.com/media/Yl51C5o6G4PavkkEtU/giphy.gif"></img>
+</p>
+
 
 # Installation
 # ----------Packages----------
